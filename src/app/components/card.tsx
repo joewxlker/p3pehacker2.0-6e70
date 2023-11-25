@@ -32,8 +32,9 @@ const Article: FC<{
 
 const Graphics: FC<{ src: string }> = ({ src }) => {
   return (
-    <div className="h-40 w-full overflow-clip rounded-md">
+    <div className="h-40 w-full overflow-clip rounded-md relative">
       <video className="" style={{ objectFit: "cover"}} src={src} muted autoPlay loop />
+      <div id="overlay" className="absolute inset-0"/>
     </div>
   );
 };

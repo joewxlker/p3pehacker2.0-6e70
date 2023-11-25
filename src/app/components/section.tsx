@@ -50,8 +50,9 @@ const Graphics: FC<{
   alt: string;
 }> = ({ src, alt }) => {
   return (
-    <div className={`flex w-[500px] max-w-[90vw] flex-row rounded-md overflow-clip`}>
+    <div className={`flex w-[500px] max-w-[90vw] flex-row rounded-md overflow-clip relative`}>
       <video src={src} autoPlay loop muted />
+      <div id="overlay" className="absolute inset-0"/>
     </div>
   );
 };

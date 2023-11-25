@@ -7,5 +7,9 @@ html {
 }
 
 #landing {
-    background-image: linear-gradient(transparent,theme(colors.s3));
+    background-image: linear-gradient(#3f621270,theme(colors.s3));
+}
+
+#overlay {
+    background-image: linear-gradient(#3f621270,#3f621270);
 }

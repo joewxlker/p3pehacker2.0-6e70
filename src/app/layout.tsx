@@ -1,13 +1,13 @@
 import "~/styles/globals.css";
 
-import { Kablammo, Share_Tech_Mono } from "next/font/google";
+import { Kablammo, Share_Tech_Mono, Rubik_Mono_One } from "next/font/google";
 import { type Metadata } from "next";
 
 import config from "public/config.json";
 
 export const metadata: Metadata = config.meta;
 
-const heading = Share_Tech_Mono({
+const heading = Rubik_Mono_One({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-heading",
