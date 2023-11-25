@@ -42,7 +42,7 @@ export const Header: FC<{ layout: string; config: ProjectInfo }> = ({
             <h3 className="font-body text-xl text-t1">{section.title}</h3>
           </Link>
         ))}
-        <Button href={config.dextools} text="ㄈнΛ尺Ť" />
+        <Button href={config.dextools} text="ㄈ̴̩́н̵̬̈́Λ̶̠̏尺̴͎͊Ť̴̠̾" />
       </div>
       <div className="flex flex-1 flex-row items-center justify-end md:hidden lg:hidden xl:hidden">
         <button
@@ -61,7 +61,7 @@ export const Header: FC<{ layout: string; config: ProjectInfo }> = ({
         <div className="relative h-full w-full">
           <div className="absolute bottom-0 left-0 right-0 top-20 bg-p1 text-t2">
             <header className="flex w-full flex-row items-center justify-between p-5">
-              <p className="font-body text-2xl text-black">Ƥ3ƤЄӇƛƇƘЄƦ2.0</p>
+              <p className="font-body text-2xl text-black">Ƥ̴̤̕3̶̗̕Ƥ̸̰̅Є̵͈̓Ӈ̴̣̉ƛ̷̤̑Ƈ̵̰̀Ƙ̴̻̔Є̷͕͒Ʀ̶͎̔2̶̘̚.̸̠̈́0̸̨̀</p>
               <button
                 className="flex h-10 w-10 items-center justify-center rounded"
                 type="button"
@@ -72,7 +72,7 @@ export const Header: FC<{ layout: string; config: ProjectInfo }> = ({
             </header>
             <div className="flex flex-col gap-5 p-5">
               <Link href={config.dextools} target="_blank">
-                <p className="font-heading text-3xl text-black">ㄈнΛ尺Ť</p>
+                <p className="font-heading text-3xl text-black">ㄈ̴̩́н̵̬̈́Λ̶̠̏尺̴͎͊Ť̴̠̾</p>
               </Link>
               {sections?.map((section) => (
                 <button

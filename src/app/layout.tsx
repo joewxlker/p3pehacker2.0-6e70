@@ -26,7 +26,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${heading.variable} ${body.variable} bg-s3`}>
+      <body className={`${heading.variable} ${body.variable} bg-gradient-to-b from-s3 to-black`}>
         {children}
       </body>
     </html>
