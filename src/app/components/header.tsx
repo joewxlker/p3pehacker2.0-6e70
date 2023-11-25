@@ -7,7 +7,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Button } from "./button";
 import { type ProjectInfo } from "~/app/models/project.model";
-import { Socials } from "~/app/components/socials.tsx"
+import { Socials } from "~/app/components/socials"
 
 export const Header: FC<{ layout: string; config: ProjectInfo }> = ({
   layout,
