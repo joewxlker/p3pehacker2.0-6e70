@@ -3,7 +3,7 @@ import { ReactNode, type FC } from "react";
 
 const Container: FC<{ children: ReactNode }> = ({ children }) => {
   return (
-    <div className="flex w-full max-w-[100vw] flex-col items-center justify-center gap-3 rounded bg-p1 p-3 text-t1 shadow-sm shadow-shadow md:w-80 lg:w-80 xl:w-80">
+    <div className="flex w-full max-w-[100vw] flex-col items-center justify-center gap-3 rounded bg-shadow p-3 text-t1 shadow-lg shadow-shadow flex-1 !min-w-[20rem]">
       {children}
     </div>
   );
@@ -12,7 +12,7 @@ const Container: FC<{ children: ReactNode }> = ({ children }) => {
 const Header: FC<{ heading: string; icon?: string }> = ({ heading, icon }) => {
   return (
     <div className="flex w-full flex-row items-center justify-between py-2">
-      <h3 className="font-heading text-3xl">{heading}</h3>
+      <h3 className="font-heading text-t2 text-3xl">{heading}</h3>
       {icon && <Image alt="" src={icon} height={30} width={30} />}
     </div>
   );
@@ -32,8 +32,8 @@ const Article: FC<{
 
 const Graphics: FC<{ src: string }> = ({ src }) => {
   return (
-    <div className="flex-1">
-      <Image src={src} height={150} width={400} alt="" />
+    <div className="h-40 w-full overflow-clip rounded-md">
+      <video className="" style={{ objectFit: "cover"}} src={src} muted autoPlay loop />
     </div>
   );
 };

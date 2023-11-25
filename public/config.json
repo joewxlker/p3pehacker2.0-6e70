@@ -1,25 +1,27 @@
 {
-  "about": " ",
-  "symbol": "ZOMB",
-  "telegram": "https://t.me/undeadflokiportal",
-  "twitter": "https://twitter.com/REPLACE_TWITTER_USERNAME",
+  "name": "P3PEHACKER2.0",
+  "about": "Welcome to the world of P3PE HACKER2.0, where anything is possible due to the power of memes, humor, degenerates, and community. Inspired by the legendary Pepe2.0 and the infamous P3PE Hacker.",
+  "symbol": "P3PE2.0",
+  "telegram": "https://t.me/pepehackertwoportal",
+  "website": "https://www.pepehackertwo.party",
+  "twitter": "https://www.twitter.com/",
   "taxes": {
-    "initialTaxFeeOnBuy": "20",
-    "initialTaxFeeOnSell": "20",
+    "initialTaxFeeOnBuy": "15",
+    "initialTaxFeeOnSell": "15",
     "taxFeeOnBuy": "0",
-    "taxFeeOnSell": "3"
+    "taxFeeOnSell": "0"
   },
-  "contractAddress": "REPLACE_CONTRACT_ADDRESS",
-  "uniswap": "https://app.uniswap.org/#/swap?outputCurrency=REPLACE_CONTRACT_ADDRESS",
-  "etherscan": "https://etherscan.io/token/REPLACE_CONTRACT_ADDRESS",
-  "dextools": "https://www.dextools.io/app/en/ether/pair-explorer/REPLACE_CONTRACT_ADDRESS",
+  "contractAddress": "0x000000000000000000000000000000000000",
+  "uniswap": "https://app.uniswap.org/#/swap?outputCurrency=0x000000000000000000000000000000000000",
+  "etherscan": "https://etherscan.io/token/0x000000000000000000000000000000000000",
+  "dextools": "https://www.dextools.io/app/en/ether/pair-explorer/0x000000000000000000000000000000000000",
   "meta": {
-    "title": "UndeadFLoki",
-    "description": " ",
+    "title": "P3PEHACKER2.0",
+    "description": "",
     "icons": [
       {
         "rel": "icon",
-        "url": "/favicon.ico"
+        "url": "/favicon/favicon.ico"
       }
     ]
   }

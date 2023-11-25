@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { Button } from "./button";
 import { type ProjectInfo } from "~/app/models/project.model";
+import { Socials } from "~/app/components/socials.tsx"
 
 export const Header: FC<{ layout: string; config: ProjectInfo }> = ({
   layout,
@@ -25,29 +26,31 @@ export const Header: FC<{ layout: string; config: ProjectInfo }> = ({
   );
   return (
     <div
-      className={`${layout} fixed left-0 right-0 top-0 flex flex-row bg-p1 py-2 shadow-sm shadow-shadow`}
+      className={`${layout} fixed left-0 right-0 top-0 flex flex-row backdrop-blur-sm py-2 bg-shadow shadow-lg shadow-shadow z-50`}
     >
-      <div className="flex flex-1 flex-col justify-center">
+      <div className="flex flex-col justify-center">
         <Link href="/">
-          <Image src="" alt="" height={40} width={40} />
+          <Image className="-scale-x-100 rounded-full bg-black" src="/logo.jpg" alt="" height={50} width={50} />
         </Link>
       </div>
-      <div className="flex-1" />
+      <div className="flex-1 m-auto">
+        <Socials config={config} />
+        </div>
       <div className="hidden flex-1 flex-row items-center justify-evenly gap-5 md:flex lg:flex xl:flex">
         {sections?.map((section) => (
           <Link key={section.title} href={section.href}>
-            <h3 className="font-body text-2xl text-t1">{section.title}</h3>
+            <h3 className="font-body text-xl text-t1">{section.title}</h3>
           </Link>
         ))}
-        <Button href={config.dextools} text="CHART" />
+        <Button href={config.dextools} text="ㄈнΛ尺Ť" />
       </div>
       <div className="flex flex-1 flex-row items-center justify-end md:hidden lg:hidden xl:hidden">
         <button
-          className="flex h-10 w-10 items-center justify-center rounded bg-s1"
+          className="flex h-10 w-10 items-center justify-center rounded bg-p1"
           type="button"
           onClick={toggleMenu}
         >
-          <Image src="/icons/bars.svg" alt="" height={34} width={34} />
+          <Image src="/bars.svg" alt="" height={25} width={25} />
         </button>
       </div>
       <div
@@ -56,29 +59,29 @@ export const Header: FC<{ layout: string; config: ProjectInfo }> = ({
         }`}
       >
         <div className="relative h-full w-full">
-          <div className="absolute bottom-0 left-0 right-0 top-20 bg-s1 text-t2">
+          <div className="absolute bottom-0 left-0 right-0 top-20 bg-p1 text-t2">
             <header className="flex w-full flex-row items-center justify-between p-5">
-              <p className="font-heading text-4xl">TEMPLATE</p>
+              <p className="font-body text-2xl text-black">Ƥ3ƤЄӇƛƇƘЄƦ2.0</p>
               <button
                 className="flex h-10 w-10 items-center justify-center rounded"
                 type="button"
                 onClick={toggleMenu}
               >
-                <Image src="/icons/x.svg" alt="" height={34} width={34} />
+                <Image src="/z.svg" alt="" height={25} width={25} />
               </button>
             </header>
             <div className="flex flex-col gap-5 p-5">
               <Link href={config.dextools} target="_blank">
-                <p className="font-heading text-3xl">CHART</p>
+                <p className="font-heading text-3xl text-black">ㄈнΛ尺Ť</p>
               </Link>
               {sections?.map((section) => (
                 <button
-                  className="flex flex-row items-center justify-start"
+                  className="flex flex-row items-center justify-start text-black"
                   type="button"
                   onClick={() => navigate(section.href)}
                   key={section.title}
                 >
-                  <h3 className="font-body text-2xl">{section.title}</h3>
+                  <h3 className="font-body text-2xl text-black">{section.title}</h3>
                 </button>
               ))}
             </div>

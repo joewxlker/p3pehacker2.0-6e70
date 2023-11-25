@@ -9,13 +9,13 @@ export default {
         body: ["var(--font-body)"],
       },
       colors: {
-        p1: "#151515", // Bright yellow
-        s1: "#232323", // Dark background
-        s2: "#333333", // Slightly lighter background
-        s3: "#444444", // Even lighter background
-        t1: "#FFFFFF", // White text
-        t2: "#DDDDDD", // Light gray text
-        shadow: "rgba(0, 0, 0, 0.2)", // Slight shadow
+        p1: "#eab308", // Bright yellow
+        s1: "#0369a1", // Dark background
+        s2: "#082f49", // Slightly lighter background
+        s3: "#101010", // Even lighter background
+        t1: "#ffffff", // White text
+        t2: "#309930", // Light gray text
+        shadow: "#10b98130", // Slight shadow
       },
     },
   },

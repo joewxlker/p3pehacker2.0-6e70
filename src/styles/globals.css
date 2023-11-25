@@ -5,3 +5,7 @@
 html {
     scroll-behavior: smooth !important;
 }
+
+#landing {
+    background-image: linear-gradient(transparent,theme(colors.s3));
+}

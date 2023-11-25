@@ -15,7 +15,7 @@ const Container: FC<{ id: string; children: ReactNode }> = ({
 const Header: FC<{ title: string }> = ({ title }) => {
   return (
     <div className="flex w-full flex-row items-center py-12">
-      <h2 className="font-heading text-4xl text-t2">
+      <h2 className="font-heading text-3xl text-t2">
         {title[0]?.toUpperCase()}
         {title.slice(1)}
       </h2>
@@ -38,7 +38,7 @@ const Article: FC<{
 }> = ({ body }) => {
   return (
     <article className="flex w-[500px] max-w-[100vw] flex-auto items-center justify-center py-5 font-body">
-      <p className="font-body text-2xl text-t1">{body}</p>
+      <p className="font-body text-xl text-t1">{body}</p>
     </article>
   );
 };
@@ -50,8 +50,8 @@ const Graphics: FC<{
   alt: string;
 }> = ({ src, alt }) => {
   return (
-    <div className={`flex w-[500px] max-w-[90vw] flex-row`}>
-      <Image src={src} height={300} width={500} alt={alt} />
+    <div className={`flex w-[500px] max-w-[90vw] flex-row rounded-md overflow-clip`}>
+      <video src={src} autoPlay loop muted />
     </div>
   );
 };

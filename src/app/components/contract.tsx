@@ -21,7 +21,7 @@ export const Contract: FC<{ contractAddress: string }> = ({
         <p
           className={`${
             copied ? "text-lime-500" : "text-t2"
-          } hidden text-center font-body text-4xl transition-colors duration-300 md:block lg:block xl:block`}
+          } hidden text-center font-body text-2xl transition-colors duration-300 md:block lg:block xl:block`}
         >
           Contract : {contractAddress}
         </p>
@@ -30,7 +30,7 @@ export const Contract: FC<{ contractAddress: string }> = ({
         <p
           className={`${
             copied ? "text-lime-500" : "text-t2"
-          } block text-center font-body text-3xl transition-colors duration-300 md:hidden lg:hidden xl:hidden`}
+          } block text-center font-body text-2xl transition-colors duration-300 md:hidden lg:hidden xl:hidden`}
         >
           Contract : {contractAddress.slice(0, 10)}...
           {contractAddress.slice(36, 50)}
